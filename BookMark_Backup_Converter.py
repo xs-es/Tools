@@ -40,7 +40,7 @@ def chrome_bookmarks_to_html(input_file, output_file):
         f.write(html_output)
 
 def select_input_file():
-    filename = filedialog.askopenfilename(filetypes=[("JSON files", "*.json")])
+    filename = filedialog.askopenfilename(filetypes=[("Chrome Bookmark files", "*.*")])
     input_path.set(filename)
 
 def select_output_file():
